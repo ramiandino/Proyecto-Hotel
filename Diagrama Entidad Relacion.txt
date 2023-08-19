@@ -1,0 +1,116 @@
+Crear un diagrama entidad-relación (DER) para tu página web de hoteles es una excelente manera de planificar y organizar la estructura de tu base de datos. Aquí te proporcionaré una guía paso a paso para ayudarte a crear el DER:
+
+Paso 1: Identificar las Entidades
+Las entidades son objetos o conceptos que necesitas almacenar en tu base de datos. En el contexto de tu página web de hoteles, algunas posibles entidades podrían ser:
+
+Hotel
+Habitación
+Cliente
+Reserva
+Comentario/Opinión
+Servicio
+Empleado
+
+Paso 2: Definir Atributos
+Para cada entidad, debes identificar los atributos que describen y caracterizan a esa entidad. Por ejemplo:
+
+Hotel:
+
+ID
+Nombre
+Dirección
+Ciudad
+País
+Estrellas
+Descripción
+etc.
+
+Habitación:
+
+ID
+Tipo (individual, doble, suite, etc.)
+Precio por noche
+Capacidad
+Disponibilidad
+Descripción
+etc.
+
+Cliente:
+
+ID
+Nombre
+Apellido
+Correo electrónico
+Teléfono
+Dirección
+etc.
+
+Reserva:
+
+ID
+Fecha de entrada
+Fecha de salida
+Estado de la reserva
+Total a pagar
+Cliente (clave foránea)
+Habitación (clave foránea)
+etc.
+
+Eventos:
+
+ID del Evento
+Nombre del Evento
+Descripción
+Fecha y Hora del Evento
+Ubicación (si aplica)
+Tipo de Evento (conferencia, boda, reunión, etc.)
+Hotel (clave foránea)
+
+Calendario de Disponibilidad:
+
+ID de la Fecha de Disponibilidad
+Fecha
+Disponibilidad (número de habitaciones disponibles)
+Precio por Noche (puede variar según la fecha)
+Hotel (clave foránea)
+
+Redes Sociales:
+
+ID de la Red Social
+Nombre de la Red Social (ej. Facebook, Twitter, Instagram)
+Enlace/URL del Perfil
+Hotel (clave foránea)
+
+Paso 3: Definir Relaciones
+Luego de identificar las entidades y sus atributos, es hora de establecer las relaciones entre ellas. Las relaciones pueden ser uno a uno, uno a muchos o muchos a muchos. Algunos ejemplos de relaciones podrían ser:
+
+Un hotel puede tener muchas habitaciones, pero una habitación pertenece a un solo hotel (relación uno a muchos).
+Un cliente puede hacer varias reservas, pero cada reserva pertenece a un solo cliente (relación uno a muchos).
+Una habitación puede tener muchas reservas y una reserva puede estar asociada a una habitación específica (relación uno a muchos).
+Un cliente puede dejar múltiples comentarios/opiniones, pero cada comentario pertenece a un solo cliente (relación uno a muchos).
+
+Eventos:
+
+Un Hotel puede tener muchos Eventos.
+Un Evento pertenece a un solo Hotel.
+
+Calendario de Disponibilidad:
+
+Un Hotel puede tener muchas Fechas de Disponibilidad.
+Una Fecha de Disponibilidad pertenece a un solo Hotel.
+Una Fecha de Disponibilidad puede tener muchas Reservas.
+Una Reserva está asociada a una sola Fecha de Disponibilidad.
+
+Redes Sociales:
+
+Un Hotel puede tener muchas Redes Sociales.
+Una Red Social pertenece a un solo Hotel.
+
+Paso 4: Crear el Diagrama DER
+Usa una herramienta de diseño de diagramas, como Lucidchart, Draw.io o cualquier otra que prefieras, para crear el diagrama entidad-relación. Coloca las entidades como rectángulos y conecta las relaciones con líneas que indican la cardinalidad y dirección de la relación (uno a muchos o muchos a muchos).
+
+Asegúrate de etiquetar las relaciones con las cardinalidades apropiadas, por ejemplo: "1 Hotel tiene muchas Habitaciones" o "1 Reserva pertenece a 1 Habitación".
+
+Recuerda que este es solo un esquema básico para tu página web de hoteles. Dependiendo de la complejidad de tu proyecto, es posible que necesites agregar más entidades y relaciones.
+
+Una vez que hayas completado tu diagrama entidad-relación, tendrás una guía clara para desarrollar la estructura de tu base de datos y la funcionalidad de tu página web de hoteles.
